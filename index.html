@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" author="Bernardo Simonassi">
+	<title>WA Turismo</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!-- CSS MOBILE -->
+	<link rel="stylesheet" type="text/css" href="css/waturismo.css">
+	<link rel="stylesheet" type="text/css" href="css/waturismo-mobile.css">
+</head>
+<body>
+	<header>
+
+		<div class="row">
+			<div class="col-4">
+				<div class="row" id="logotipo">
+					<img class="float-right" src="img/logop.png">
+				</div>
+			</div>
+			<div class="col-8">
+					<div class="row" id="caixa1">
+						<div id="pesquisar" class="col-6">
+							<div class="input-group mb-3">
+							  <input type="search" id="input-search" class="form-control no-outline" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
+							  <div class="input-group-append">
+							    <button class="btn" type="button"><i class="fa fa-search"></i></button>
+							  </div>
+							</div>
+						</div>
+						<div id="contato" class="col-6">
+							<li><a class="endereçoclick">Endereço</a></li>|
+							<li><a class="endereçoclick">Contato</a></li>
+						</div>
+					</div>
+					<div class="row" id="caixa2">
+						<ul>
+							<li><a class="inicioclick">Início</a></li>
+							<li><a class="empresaclick">A Empresa</a></li>
+							<li><a class="faixa2click">Serviços</a></li>
+							<li><a class="serviçosclick">Frota</a></li>
+							<li><a href="index2.html"><button class="btn btn-primary">Orçamento</button></a></li> 
+						</ul>
+					</div>
+
+			</div>
+		</div>
+
+		<div id="menu-mobile" class="mobile">
+			<ul class="list-unstyled">
+				<li><a class="inicioclick">Início</a></li>
+				<li><a class="empresaclick">A Empresa</a></li>
+				<li><a class="faixa2click">Serviços</a></li>
+				<li><a class="serviçosclick">Frota</a></li>
+				<li><a href="index2.html"><button class="btn btn-primary">Orçamento</button></a></li> 
+			</ul>
+			<div class="bar-close">
+				<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			</div>
+		</div>
+
+		<div id="menu-mobile-mask" class="mobile"></div>
+
+		<div id="menu-phone" class="mobile">
+			<ul class="list-unstyled">
+				<li><h6>Contato</h6></li>
+				<li><a href="tel:+5527999309727">(27)99930-9727 - Welington</a></li>
+				<li><a href="tel:+5527999309727"><button class="btn btn-primary">Clique aqui para ligar!</button></a></li> 
+			</ul>
+			<div class="bar-close-phone">
+				<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			</div>
+		</div>
+
+		<div id="menu-phone-mask" class="mobile"></div>
+
+		<div class="row-mobile mobile">
+				<button id="btn-bars" class="btn float-left" type="button"><i class="fas fa-bars"></i></button>
+				<div id="logomobile"><img src="img/logomobile.png"></div>
+				<button id="btn-phone" class="btn float-right" type="button"><i class="fas fa-phone"></i></button>
+		</div>
+	</header>
+
+	
+	<article>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner" role="listbox">
+		    <div class="carousel-item active">
+		      <img class="d-block img-fluid" src="img/banner2.png" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block img-fluid" src="img/banner3.png" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block img-fluid" src="img/banner4.png" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+	</article>
+
+	<section class="I">
+		<article>
+			<div id="serviços" class="container">
+				<div class="row" id="opçoes-de-serviços">
+					    <div class="col-sm">
+					      <a class="btn btn" data-toggle="tab" href="#menu1" id="Executivos">
+					      		<img src="img/executivop.png">
+					      		<p>Executivos</p>
+					      		<i class="fas fa-male"></i>
+					      </a>
+					    </div>
+					    <div class="col-sm">
+					      <a class="btn btn inativo" data-toggle="tab" href="#menu2" id="Vans" class="inativo">
+					      		<img src="img/vanp.png">
+					      		<p>Vans</p>
+					      		<i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i>
+					      </a>
+					    </div>
+					    <div class="col-sm">
+					      <a class="btn btn inativo" data-toggle="tab" href="#menu3" id="Microonibus" class="inativo">
+					      		<img src="img/microonibusp.png">
+					      		<p>Microônibus</p>
+					      		<i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i>
+					      </a>
+					    </div>
+					    <div class="col-sm">
+					      <a class="btn btn inativo last" data-toggle="tab" href="#menu4" id="Onibus" class="inativo">
+					      		<img src="img/onibusp.png">
+					      		<p>Ônibus</p>
+					      		<i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i>
+					      </a>
+					    </div>
+				</div>
+
+				<div class="tab-content">
+					<div id="menu1" class="tab-pane w3-animate-opacity in active">
+						<div class="row" id="opçao-selecionada">
+							<div class="col">
+								<h1>Executivos</h1>
+								<img src="img/executivog.png" id="imagemgrande">
+							</div>
+							<div class="col">
+								<div class="float-right">
+									<div><p class="numero">4</p><h2>Lugares</h2></div>
+									<p>Carros com motorista</p>
+								</div>
+								<div class="float-left">
+									<p><i class="fas fa-check-circle"></i>Sem atrasos</p>
+									<p><i class="fas fa-check-circle"></i>Conforto e Segurança</p>
+								</div>
+								<div class="botoes">
+									<a href="index2.html" class="btn btn-1">ORÇAMENTO</a><a class="btn btn-2">MAIS INFORMAÇÕES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="menu2" class="tab-pane w3-animate-opacity">
+						<div class="row" id="opçao-selecionada">
+							<div class="col">
+								<h1>Vans</h1>
+								<img src="img/vang.png" id="imagemgrande">
+							</div>
+							<div class="col">
+								<div class="float-right">
+									<div><p class="numero">12 a 15</p><h2>Lugares</h2></div>
+									<p>Carros com motorista</p>
+								</div>
+								<div class="float-left">
+									<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+									<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+								</div>
+								<div class="botoes">
+									<a href="index2.html" class="btn btn-1">ORÇAMENTO</a><a class="btn btn-2">MAIS INFORMAÇÕES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="menu3" class="tab-pane w3-animate-opacity">
+						<div class="row" id="opçao-selecionada">
+							<div class="col">
+								<h1>Microônibus</h1>
+								<img src="img/microonibusg.png" id="imagemgrande">
+							</div>
+							<div class="col">
+								<div class="float-right">
+									<div><p class="numero">22 a 27</p><h2>Lugares</h2></div>
+									<p>Carros com motorista</p>
+								</div>
+								<div class="float-left">
+									<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+									<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+								</div>
+								<div class="botoes">
+									<a href="index2.html" class="btn btn-1">ORÇAMENTO</a><a class="btn btn-2">MAIS INFORMAÇÕES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="menu4" class="tab-pane w3-animate-opacity">
+						<div class="row" id="opçao-selecionada">
+							<div class="col">
+								<h1>Ônibus</h1>
+								<img src="img/onibusg.png" id="imagemgrande">
+							</div>
+							<div class="col">
+								<div class="float-right">
+									<div><p class="numero">45 a 50</p><h2>Lugares</h2></div>
+									<p>Carros com motorista</p>
+								</div>
+								<div class="float-left">
+									<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+									<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+								</div>
+								<div class="botoes">
+									<a href="index2.html" class="btn btn-1">ORÇAMENTO</a><a class="btn btn-2">MAIS INFORMAÇÕES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</article>
+
+		<article class="mobile mobile-1">
+			<div class="container arrastar owl-carousel owl-theme">
+				<div class="item">
+					<div class="item-inner">
+						<div class="row" id="opçao-selecionada">
+									<div class="col-6">
+										<h1>Executivos</h1>
+										<img src="img/executivop.png">
+									</div>
+									<div class="col-6">
+										<div class="float-right">
+											<div><p class="numero">4</p><h2>Lugares</h2></div>
+											<p>Carros com motorista</p>
+										</div>
+										<div class="float-left">
+											<p><i class="fas fa-check-circle"></i>Sem atrasos</p>
+											<p><i class="fas fa-check-circle"></i>Conforto e Segurança</p>
+										</div>
+									</div>
+								</div>
+						<div class="row botoes">
+							<div class="col-6">
+								<a href="index2.html" class="btn btn-1">ORÇAMENTO</a>
+							</div>
+							<div class="col-6">
+								<a class="btn btn-2">+INFORMAÇÕES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-inner">
+						<div class="row" id="opçao-selecionada">
+									<div class="col-6">
+										<h1>Vans</h1>
+										<img src="img/vanp.png">
+									</div>
+									<div class="col-6">
+										<div class="float-right">
+											<div><p class="numero">12 a 15</p><h2>Lugares</h2></div>
+											<p>Carros com motorista</p>
+										</div>
+										<div class="float-left">
+											<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+											<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+										</div>
+									</div>
+								</div>
+						<div class="row botoes">
+							<div class="col-6">
+								<a href="index2.html" class="btn btn-1">ORÇAMENTO</a>
+							</div>
+							<div class="col-6">
+								<a class="btn btn-2">+INFORMAÇÕES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-inner">
+						<div class="row" id="opçao-selecionada">
+									<div class="col-6">
+										<h1>Microônibus</h1>
+										<img src="img/microonibusp.png">
+									</div>
+									<div class="col-6">
+										<div class="float-right">
+											<div><p class="numero">22 a 27</p><h2>Lugares</h2></div>
+											<p>Carros com motorista</p>
+										</div>
+										<div class="float-left">
+											<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+											<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+										</div>
+									</div>
+								</div>
+						<div class="row botoes">
+							<div class="col-6">
+								<a href="index2.html" class="btn btn-1">ORÇAMENTO</a>
+							</div>
+							<div class="col-6">
+								<a class="btn btn-2">+INFORMAÇÕES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-inner">
+						<div class="row" id="opçao-selecionada">
+									<div class="col-6">
+										<h1>Ônibus</h1>
+										<img src="img/onibusp.png">
+									</div>
+									<div class="col-6">
+										<div class="float-right">
+											<div><p class="numero">45 a 50</p><h2>Lugares</h2></div>
+											<p>Carros com motorista</p>
+										</div>
+										<div class="float-left">
+											<p><i class="fas fa-check-circle"></i>Combustível e Pedágio</p>
+											<p><i class="fas fa-check-circle"></i>Seguro Passageiros</p>
+										</div>
+									</div>
+								</div>
+						<div class="row botoes">
+							<div class="col-6">
+								<a href="index2.html" class="btn btn-1">ORÇAMENTO</a>
+							</div>
+							<div class="col-6">
+								<a class="btn btn-2">+INFORMAÇÕES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div id="empresa" class="container">
+				<div class="titulo">
+					<p>A <b>EMPRESA</b></p>
+					<hr>
+				</div>
+				<div id="descriçao">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<i class="far fa-clock"></i>
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyled">
+							<li><b>24 Horas</b></li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<i class="far fa-address-card"></i>
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyled">
+							<li><b>Motoristas Capacitados</b></li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<i class="fas fa-home"></i>
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyled">
+							<li><b>Compromisso com o Cliente</b></li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<div class="col-4">
+						<ul class="list-unstyled">
+							<li><b>Velocidade Controlada</b></li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--<img class="img-fluid" id="faixa1" src="img/faixa1.png">-->
+			<div class="parallax-window desktop" data-parallax="scroll" data-image-src="img/paralaxe1.jpg"></div>
+			</div>
+		</article>
+
+		<article class="mobile mobile-2">
+			<div class="container">
+				<div class="row">
+						<div class="col-4">
+							<i class="far fa-clock"></i>
+						</div>
+						<div class="col-8">
+							<ul class="list-unstyled">
+								<li><b>24 Horas</b></li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+							</ul>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-4">
+							<i class="far fa-address-card"></i>
+						</div>
+						<div class="col-8">
+							<ul class="list-unstyled">
+								<li><b>Motoristas Capacitados</b></li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+							</ul>
+						</div>
+				</div>
+					<div class="row">
+						<div class="col-4">
+							<i class="fas fa-home"></i>
+						</div>
+						<div class="col-8">
+							<ul class="list-unstyled">
+								<li><b>Compromisso com o Cliente</b></li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+							</ul>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-4">
+							<i class="fas fa-tachometer-alt"></i>
+						</div>
+						<div class="col-8">
+							<ul class="list-unstyled">
+								<li><b>Velocidade Controlada</b></li>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<img class="img-fluid" id="faixa11" src="img/faixa1.png">
+		</article>
+
+		<article>
+			<div class="titulo" id="serv">
+				<p>NOSSOS <b>SERVIÇOS</b></p>
+				<hr>
+			</div>
+			<div class="owl-carousel owl-theme container galeria">
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv1.png">
+					    <img src="img/serv1.png" alt="Excursões" width="300" height="200">
+					  </a>
+					  <div class="desc">Excursões</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv2.png">
+					    <img src="img/serv2.png" alt="Formaturas" width="300" height="200">
+					  </a>
+					  <div class="desc">Formaturas</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv3.png">
+					    <img src="img/serv3.png" alt="Casamentos" width="300" height="200">
+					  </a>
+					  <div class="desc">Casamentos</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv4.png">
+					    <img src="img/serv4.png" alt="City Tour" width="300" height="200">
+					  </a>
+					  <div class="desc">City Tour</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv5.png">
+					    <img src="img/serv5.png" alt="Funeral" width="300" height="200">
+					  </a>
+					  <div class="desc">Funeral</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv6.png">
+					    <img src="img/serv6.png" alt="Aeroporto" width="300" height="200">
+					  </a>
+					  <div class="desc">Aeroporto</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv7.png">
+					    <img src="img/serv7.png" alt="Festas" width="300" height="200">
+					  </a>
+					  <div class="desc">Festas</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv8.png">
+					    <img src="img/serv8.png" alt="Porto de Vitória" width="300" height="200">
+					  </a>
+					  <div class="desc">Porto de Vitória</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv9.png">
+					    <img src="img/serv9.png" alt="Viagens Intermunicipais e Interestaduais" width="300" height="200">
+					  </a>
+					  <div class="desc">Viagens Interestaduais</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="gallery">
+					  <a target="_blank" href="img/serv10.png">
+					    <img src="img/serv10.png" alt="Competições" width="300" height="200">
+					  </a>
+					  <div class="desc">Competições</div>
+					</div>
+				</div>
+			</div>
+			<div id="carronoiva" class="container">
+				<div class="row">
+					<div class="col-7">
+						<h4>Quer alugar um carro para seu casamento? <b>Entre em contato!</b></p>
+						<p>Também trabalhamos com carros exóticos.</p>
+						<button class="btn btn-1 btncarronoiva">SAIBA MAIS</button>
+					</div>
+					<div class="col-5">
+						<div id="fotocarronoiva"></div>
+					</div>
+				</div>
+				<div class="row infocarronoiva d-none">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="container" id="clientes">
+				<div class="titulo">
+					<p>NOSSOS <b>CLIENTES</b></p>
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-3"><img src="img/logo1.png"></div>
+					<div class="col-3"><img src="img/logo2.png"></div>
+					<div class="col-3"><img src="img/logo3.png"></div>
+					<div class="col-3"><img src="img/logo4.png"></div>
+				</div>
+			</div>
+			<div class="faixa3">
+				<div class="container">
+					<div class="row">
+						<div class="col-8">
+							<div class="row">
+								<div class="col-5">
+									<h5>NEWSLETTER</h5>
+									<p>FIQUE POR DENTRO DAS NOVIDADES!</p>
+								</div>
+								<div class="col-7">
+									<p>Seu email:</p>
+									<form id="newsletter">
+										<div class="input-group mb-3">
+										  <input type="email" id="input-email" class="form-control no-outline" placeholder="welingtonturismo@hotmail.com" aria-label="welingtonturismo@hotmail.com" aria-describedby="basic-addon2">
+										  <div class="input-group-append">
+										    <button class="btn" type="button"><p>ENVIAR</p></button>
+										  </div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<ul class="list-socials">
+				    			<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+				    			<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				    			<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				    		</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="mobile mobile-3">
+			<div class="carronoiva">
+				<h4>Quer alugar um carro para seu casamento? <b>Entre em contato!</b></p>
+				<img src="img/carronoiva.png" class="img-fluid" id="imgcarronoiva">
+				<p>Também trabalhamos com carros exóticos.</p>
+				<button class="btn btn-1 btncarronoiva">SAIBA MAIS</button>
+			</div>
+			<div class="container infocarronoiva d-none">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+
+		</article>
+
+		<footer id="cabeçalho">
+			<div class="container desktop">
+				<div class="row">
+							<div class="col-4 col-links">
+				    			<h4>LINKS</h4>
+				    			<ul class="list-unstyled">
+				    				<li>
+				    					<a class="empresaclick"><i class="fa fa-angle-right"></i>A Empresa</a>
+				    				</li>
+				    				<li>
+				    					<a class="faixa2click"><i class="fa fa-angle-right"></i>Serviços</a>
+				    				</li>
+				    				<li>
+				    					<a class="serviçosclick"><i class="fa fa-angle-right"></i>Frota</a>
+				    				</li>
+				    			</ul>
+				    		</div>	
+				    		<div class="col-4 col-endereço">
+				    			<h4>ENDEREÇO</h4>
+				    			<i class="fa fa-map-marker-alt"></i>
+				    			<address>Rua João Joaquim da Mota, nº 275<br> Ed. Costa Dourada,
+				    			Praia da Costa<br> Vila Velha -
+				    			Espírito Santo, Brasil</address>
+				    		</div>
+				    		<div class="col-4 col-contato">
+				    			<h4>CONTATO</h4>
+				    			<div>
+					    			<i class="fa fa-phone"></i><br>
+					    			<i class="fab fa-whatsapp"></i>
+					    		</div>
+				    			<div class="numero">
+				    				<p>(27)99930-9727 - Welington</p>
+				    				<p class="desktop">(27)99930-9727 - Welington</p>
+				    				<p>Email: welingtonturismo@hotmail.com</p>
+				    			</div>
+				    		</div>
+				    </div>
+			</div>
+
+			<div class="container mobile">
+				<div class="row">
+							<div class="col-links">
+				    			<h4>LINKS</h4>
+				    			<ul class="list-unstyled">
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>A Empresa</a>
+				    				</li>
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>Serviços</a>
+				    				</li>
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>Frota</a>
+				    				</li>
+				    			</ul>
+				    		</div>	
+				    		<div class="col-endereço">
+				    			<h4>ENDEREÇO</h4>
+				    			<i class="fa fa-map-marker-alt"></i>
+				    			<address>Rua João Joaquim da Mota, nº 275<br> Ed. Costa Dourada,
+				    			Praia da Costa<br> Vila Velha -
+				    			Espírito Santo, Brasil</address>
+				    		</div>
+				    		<div class="col-contato">
+				    			<h4>CONTATO</h4>
+				    			<div>
+					    			<i class="fa fa-phone"></i><br>
+					    			<i class="fab fa-whatsapp"></i>
+					    		</div>
+				    			<div class="numero">
+				    				<p>(27)99930-9727 - Welington</p>
+				    				<p class="desktop">(27)99930-9727 - Welington</p>
+				    				<p>Email: welingtonturismo@hotmail.com</p>
+				    			</div>
+				    		</div>
+				    </div>
+			</div>
+			<div id="map" style="width:100%;height:390px">My map will go here</div>
+			<div id="faixa4"></div>
+			<div class="row row-cinza-escuro">
+			<div class="container" id="direitos">
+				<div class="row">
+					<div class="col"><p class="left">Copyright © WA Turismo, todos os direitos reservados.</p></div>
+					<div class="col"><p class="right"><i>Site desenvolvido por Bernardo Simonassi.</i></p></div>
+				</div>
+			</div>
+		</div>
+		</footer>
+	</section>
+
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="lib/owl.carousel2/dist/owl.carousel.min.js"></script>
+	<script src="lib/jquery/parallax.js"></script>
+	<script>
+		function myMap() {
+		    var mapOptions = {
+		        center: new google.maps.LatLng(-20.3300465,-40.2790058),
+		        zoom: 18,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+
+		$(document).ready(function(){
+		    $("#Vans").click(function(){
+		        $("#Executivos").addClass("inativo");
+		        $("#Vans").removeClass("inativo");
+		        $("#Microonibus").addClass("inativo");
+		        $("#Onibus").addClass("inativo");
+		    });
+		    $("#Microonibus").click(function(){
+		        $("#Executivos").addClass("inativo");
+		        $("#Vans").addClass("inativo");
+		        $("#Microonibus").removeClass("inativo");
+		        $("#Onibus").addClass("inativo");
+		    });
+		    $("#Onibus").click(function(){
+		        $("#Executivos").addClass("inativo");
+		        $("#Vans").addClass("inativo");
+		        $("#Microonibus").addClass("inativo");
+		        $("#Onibus").removeClass("inativo");
+		    });
+		    $("#Executivos").click(function(){
+		        $("#Executivos").removeClass("inativo");
+		        $("#Vans").addClass("inativo");
+		        $("#Microonibus").addClass("inativo");
+		        $("#Onibus").addClass("inativo");
+		    });
+
+		    $(".owl-carousel").owlCarousel({
+		    	loop:true,
+			    margin:0,
+			    //nav:true,
+			    autoplay:true,
+			    autoplayTimeout:5000,
+			    autoplayHoverPause:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			});
+
+			$("#btn-bars").on("click", function(){
+				$("header").toggleClass("open-menu");
+				$("header").removeClass("open-phone");
+			});
+			$("#menu-mobile-mask, .btn-close").on("click", function(){
+				$("header").removeClass("open-menu");
+			});
+			$("#btn-phone").on("click", function(){
+				$("header").toggleClass("open-phone");
+				$("header").removeClass("open-menu");
+			});
+			$("#menu-phone-mask, .btn-close").on("click", function(){
+				$("header").removeClass("open-phone");
+			});
+
+		    $(".empresaclick").click(function() {
+		    	$("header").removeClass("open-menu");
+			    $('html,body').animate({
+			        scrollTop: $("#empresa").offset().top},
+			        'slow');
+			});
+
+			$(".faixa2click").click(function() {
+				$("header").removeClass("open-menu");
+			    $('html,body').animate({
+			        scrollTop: $("#serv").offset().top},
+			        'slow');
+			});
+
+			$(".serviçosclick").click(function() {
+				$("header").removeClass("open-menu");
+			    $('html,body').animate({
+			        scrollTop: $("#serviços").offset().top},
+			        'slow');
+			});
+
+			$(".inicioclick").click(function() {
+				$("header").removeClass("open-menu");
+			    $('html,body').animate({
+			        scrollTop: $("header").offset().top},
+			        'slow');
+			});
+
+			$(".endereçoclick").click(function() {
+				$("header").removeClass("open-menu");
+			    $('html,body').animate({
+			        scrollTop: $("#cabeçalho").offset().top},
+			        'slow');
+			});
+
+			$(".btncarronoiva").on("click", function(){
+				$(".infocarronoiva").toggleClass("d-none");
+			});
+
+
+			$('.parallax-window').parallax({imageSrc: 'img/paralaxe1.jpg'});
+		});
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIVA3ZaVKiLjPchL-d01-iKEWh6jOCS58&callback=myMap"></script>
+
+	<!-- javascript MOBILE-->
+
+</body>
+</html>

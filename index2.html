@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V5</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/waturismo.css">
+	<link rel="stylesheet" type="text/css" href="css/waturismo-mobile.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/owl.carousel2/dist/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<header>
+		<div class="row">
+			<div class="col-4">
+				<div class="row" id="logotipo">
+					<img class="float-right" src="img/logop.png">
+				</div>
+			</div>
+			<div class="col-8">
+					<div class="row" id="caixa1">
+						<div id="pesquisar" class="col-6">
+							<div class="input-group mb-3">
+							  <input type="search" id="input-search" class="form-control no-outline" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
+							  <div class="input-group-append">
+							    <button class="btn" type="button"><i class="fa fa-search"></i></button>
+							  </div>
+							</div>
+						</div>
+						<div id="contato" class="col-6">
+							<li><a class="endereçoclick">Endereço</a></li>|
+							<li><a class="endereçoclick">Contato</a></li>
+						</div>
+					</div>
+					<div class="row" id="caixa2">
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="index.html#empresa">A Empresa</a></li>
+							<li><a href="index.html#faixa1">Serviços</a></li>
+							<li><a href="index.html#serviços">Frota</a></li>
+							<li><button class="btn btn-primary">Orçamento</button></li>
+						</ul>
+					</div>
+
+			</div>
+		</div>
+
+		<div id="menu-mobile" class="mobile">
+			<ul class="list-unstyled">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="#empresa">A Empresa</a></li>
+				<li><a href="#faixa2">Serviços</a></li>
+				<li><a href="#serviços">Frota</a></li>
+				<li><a href="index2.html"><button class="btn btn-primary">Orçamento</button></a></li> 
+			</ul>
+			<div class="bar-close">
+				<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			</div>
+		</div>
+
+		<div id="menu-mobile-mask" class="mobile"></div>
+
+		<div id="menu-phone" class="mobile">
+			<ul class="list-unstyled">
+				<li><h6>Contato</h6></li>
+				<li><a href="tel:+5527999309727">(27)99930-9727 - Welington</a></li>
+				<li><a href="tel:+5527999309727"><button class="btn btn-primary">Clique para ligar!</button></a></li> 
+			</ul>
+			<div class="bar-close-phone">
+				<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			</div>
+		</div>
+
+		<div id="menu-phone-mask" class="mobile"></div>
+
+		<div class="row-mobile mobile">
+				<button id="btn-bars" class="btn float-left" type="button"><i class="fas fa-bars"></i></button>
+				<div id="logomobile"><img src="img/logomobile.png"></div>
+				<button id="btn-phone" class="btn float-right" type="button"><i class="fas fa-phone"></i></button>
+		</div>
+
+	</header>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Orçamento
+				</span>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Digite seu nome por favor.">
+					<span class="label-input100">NOME COMPLETO *</span>
+					<input class="input100" type="text" name="nome" placeholder="Seu nome">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Email inválido!">
+					<span class="label-input100">Email *</span>
+					<input class="input100" type="text" name="email" placeholder="Seu email">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Celular *</span>
+					<input class="input100" type="text" name="celular" placeholder="Número de celular com DDD">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Horário de Saída</span>
+					<input class="input100" type="text" name="hsaida" placeholder="00:00">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Horário de Chegada</span>
+					<input class="input100" type="text" name="hchegada" placeholder="00:00">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Data de Saída</span>
+					<input class="input100" type="text" name="dsaida" placeholder="Dia/Mês">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Data de Chegada</span>
+					<input class="input100" type="text" name="dchegada" placeholder="Dia/Mês">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Local de Saída</span>
+					<input class="input100" type="text" name="lsaida" placeholder="Rua - Bairro - Cidade">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Destino</span>
+					<input class="input100" type="text" name="destino" placeholder="Bairro - Cidade - Estado">
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Veículo *</span>
+					<div>
+						<select class="js-select2" name="veiculo">
+							<option>Selecione...</option>
+							<option>Carro Executivo</option>
+							<option>Van</option>
+							<option>Microônibus</option>
+							<option>Ônibus</option>
+							<option>Carro para casamento</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-range">
+						<span class="label-input100">Quantas pessoas? *</span>
+
+						<div class="contact100-form-range-value">
+							<span id="value-lower">610</span>
+							<input type="text" name="from-value">
+							<input type="text" name="to-value">
+						</div>
+
+						<div class="contact100-form-range-bar">
+							<div id="filter-bar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap-input100 bg0 rs1-alert-validate">
+					<span class="label-input100">Mensagem</span>
+					<textarea class="input100" name="mensagem" placeholder="Sua mensagem aqui..."></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Enviar
+							<i class="fas fa-arrow-right"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer id="cabeçalho">
+			<div class="container desktop">
+				<div class="row">
+							<div class="col-4 col-links">
+				    			<h4>LINKS</h4>
+				    			<ul class="list-unstyled">
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>A Empresa</a>
+				    				</li>
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>Serviços</a>
+				    				</li>
+				    				<li>
+				    					<a href="#"><i class="fa fa-angle-right"></i>Frota</a>
+				    				</li>
+				    			</ul>
+				    		</div>	
+				    		<div class="col-4 col-endereço">
+				    			<h4>ENDEREÇO</h4>
+				    			<i class="fa fa-map-marker-alt"></i>
+				    			<address>Rua João Joaquim da Mota, nº 275<br> Ed. Costa Dourada,
+				    			Praia da Costa<br> Vila Velha -
+				    			Espírito Santo, Brasil</address>
+				    		</div>
+				    		<div class="col-4 col-contato">
+				    			<h4>CONTATO</h4>
+				    			<div>
+					    			<i class="fa fa-phone"></i><br>
+					    			<i class="fab fa-whatsapp"></i>
+					    		</div>
+				    			<div class="numero">
+				    				<p>(27)99930-9727 - Welington</p>
+				    				<p class="desktop">(27)99930-9727 - Welington</p>
+				    				<p>Email: welingtonturismo@hotmail.com</p>
+				    			</div>
+				    		</div>
+				    </div>
+			</div>
+
+			<div class="container mobile">
+				<div class="row">
+							<div class="col-links">
+				    			<h4>LINKS</h4>
+				    			<ul class="list-unstyled">
+				    				<li>
+				    					<a href="index.html#empresa"><i class="fa fa-angle-right"></i>A Empresa</a>
+				    				</li>
+				    				<li>
+				    					<a href="index.html#faixa1"><i class="fa fa-angle-right"></i>Serviços</a>
+				    				</li>
+				    				<li>
+				    					<a href="index.html#serviços"><i class="fa fa-angle-right"></i>Frota</a>
+				    				</li>
+				    			</ul>
+				    		</div>	
+				    		<div class="col-endereço">
+				    			<h4>ENDEREÇO</h4>
+				    			<i class="fa fa-map-marker-alt"></i>
+				    			<address>Rua João Joaquim da Mota, nº 275<br> Ed. Costa Dourada,
+				    			Praia da Costa<br> Vila Velha -
+				    			Espírito Santo, Brasil</address>
+				    		</div>
+				    		<div class="col-contato">
+				    			<h4>CONTATO</h4>
+				    			<div>
+					    			<i class="fa fa-phone"></i><br>
+					    			<i class="fab fa-whatsapp"></i>
+					    		</div>
+				    			<div class="numero">
+				    				<p>(27)99930-9727 - Welington</p>
+				    				<p class="desktop">(27)99930-9727 - Welington</p>
+				    				<p>Email: welingtonturismo@hotmail.com</p>
+				    			</div>
+				    		</div>
+				    </div>
+			</div>
+			<div id="map" style="width:100%;height:390px">My map will go here</div>
+			<div id="faixa4"></div>
+			<div class="row row-cinza-escuro">
+			<div class="container" id="direitos">
+				<div class="row">
+					<div class="col"><p class="left">Copyright © WA Turismo, todos os direitos reservados.</p></div>
+					<div class="col"><p class="right"><i>Created by Bernardo Simonassi</i></p></div>
+				</div>
+			</div>
+		</div>
+		</footer>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Selecione...") {
+						$('.js-show-service').slideUp();
+						$(".container-contact100").css("height","1570px");
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+						$(".container-contact100").css("height","1770px");
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/noui/nouislider.min.js"></script>
+<!--===============================================================================================-->
+
+
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 0,  ],
+	        connect: false,
+	        range: {
+	            'min': 0,
+	            'max': 200
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+
+
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		function myMap() {
+		    var mapOptions = {
+		        center: new google.maps.LatLng(-20.3300465,-40.2790058),
+		        zoom: 18,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+
+		$(".endereçoclick").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#cabeçalho").offset().top},
+		        'slow');
+		});
+
+		$("#btn-bars").on("click", function(){
+			$("header").toggleClass("open-menu");
+			$("header").removeClass("open-phone");
+		});
+		$("#menu-mobile-mask, .btn-close").on("click", function(){
+			$("header").removeClass("open-menu");
+		});
+		$("#btn-phone").on("click", function(){
+			$("header").toggleClass("open-phone");
+			$("header").removeClass("open-menu");
+		});
+		$("#menu-phone-mask, .btn-close").on("click", function(){
+			$("header").removeClass("open-phone");
+		});
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIVA3ZaVKiLjPchL-d01-iKEWh6jOCS58&callback=myMap"></script>
+
+</body>
+</html>

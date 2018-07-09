@@ -1,0 +1,547 @@
+/* Tamanho padrão para tablets */
+@media only screen and (max-width: 768px) {
+	
+}
+
+/* Tamanho padrão para smartphones */
+@media only screen and (max-width: 480px) {
+	header .row, .carousel, #empresa .row, .faixa1, #carronoiva, .faixa2, .faixa3, .desktop, #clientes {
+		display: none !important;
+	}
+
+	body, .container {
+		min-width: 0;
+	}
+
+	.mobile {
+		display: block !important;
+	}
+
+	section.I {
+		bottom: 0;
+	}
+
+	header {
+	width: 100%;
+	height: 50px;
+	background-color: #004c9a;
+	}
+
+	header .row-mobile {
+		display: inline-block !important;
+		width: 100%;
+		height: 50px;
+		z-index: 20;
+		position: fixed;
+		background-color: #004c9a;
+	}
+
+	#logomobile {
+		display: inline-block !important;
+	    width: 60%;
+	    height: 50px;
+	    text-align: center;
+	}
+
+	header .row-mobile .float-left {
+		display: inline-block !important;
+		text-align: left;
+		width: 20%;
+	}
+
+	header .row-mobile .float-right {
+		display: inline-block !important;
+		text-align: right;
+		width: 20%;
+	}
+
+	header .row-mobile button {
+		background-color: #004c9a;
+		color: white;
+		font-size: 24px;
+	}
+
+	section #serviços{
+		display: none;
+	}
+
+	article {
+		display: block;
+		position: relative;
+	}
+
+	article.mobile-1{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding-top: 20px;
+		background-color: #f1f1f1;
+	}
+
+	article .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	#imagemgrande {
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 100px;
+	}
+
+	#opçao-selecionada .float-right {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#opçao-selecionada h1 {
+		font-size: 18px;
+		font-family: "SFPro";
+		text-align: center;
+		margin: 0;
+	}
+
+	#opçao-selecionada .float-right div {
+		text-align: right;
+	}
+
+	#opçao-selecionada .float-right h2{
+		display: inline-block;
+		font-weight: lighter;
+		text-align: right;
+		font-family: 'SFPro-Light';
+		font-size: 14px;
+	}
+
+	#opçao-selecionada .float-right p.numero{
+		font-family: 'SFPro';
+		display: inline-block;
+		font-size: 18px;
+		color: #004c9a;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	#opçao-selecionada .float-right p{
+		font-family: 'SFPro-Light';
+		display: block;
+		text-align: right;
+		position: relative;
+		font-size: 10px;
+	}
+
+	#opçao-selecionada .float-left {
+		width: 100%;
+		margin: 0;
+	}
+
+	#opçao-selecionada .float-left i {
+		position: relative;
+		top: 1px;
+		right: 2px;
+		font-size: 12px;
+		color: #b7b7b7;
+		margin-right: 0; 
+	}
+
+	#opçao-selecionada .float-left p {
+		font-size: 10px;
+		font-family: 'SFPro-Light';
+	}
+
+	.botoes {
+		
+	}
+
+	.botoes .btn {
+		width: 100%;
+		height: 40px;
+		padding-top: 9px;
+	}
+
+	.botoes .btn-1 {
+		color: #fff;
+	    background-color: #004c9a;
+	    border-color: #004c9a;
+	    font-family: 'SFPro';
+	    font-size: 12px;
+	}
+
+	.botoes .btn-2 {
+		color: #73b233 !important;
+		font-weight: bold;
+	    background-color: #f4f4f4;
+	    border-color: #73b233;
+	    font-family: 'SFPro';
+	    font-size: 12px;
+	    border: 2px solid;
+	}
+
+	#empresa {
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.titulo {
+		margin-top: 20px;
+	}
+
+	.titulo p {
+		font-size: 2em;
+		font-family: 'SFPro';
+	}
+
+	#empresa #descriçao {
+		margin-top: 20px;
+	}
+
+	#empresa #descriçao p {
+		font-size: 16px;
+		font-family: 'SFPro';
+	}
+
+	#faixa11 {
+		margin-bottom: 20px;
+	}
+
+	#faixa1 {
+		display: none !important;
+	}
+
+	.mobile-2{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.mobile-2 i{
+		float: right;
+		font-size: 65px;
+		color: #004c9a;
+	}
+
+	.mobile-2 li{
+		font-family: 'SFPro';
+	}
+
+	.mobile-2 b {
+		font-family: 'SFPro-Bold';
+	}
+
+	.mobile-3{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.mobile-3 .carronoiva {
+		width: 100%;
+		margin-top: 20px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.mobile-3 .carronoiva h4{
+		font-family: 'SFPro';
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.mobile-3 .carronoiva b{
+		font-family: 'SFPro-Bold';
+	}
+
+	.mobile-3 .carronoiva p{
+		font-family: 'SFPro';
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.mobile-3 .carronoiva .btn-1{
+		color: #fff;
+	    background-color: #004c9a;
+	    border-color: #004c9a;
+	    font-family: 'SFPro';
+	    font-size: 12px;
+	}
+
+	.galeria {
+		margin-top: 20px;
+		padding: 0;
+	}
+
+	.infocarronoiva {
+		width: 100%;
+		text-align: justify;
+		font-family: 'SFPro';
+		font-size: 12px;
+		padding-top: 0;
+		height: 100%;
+		margin-bottom: 0;
+	}
+
+	.mobile-3 .faixa2 {
+		display: block !important;
+		margin-top: 20px !important;
+	}
+
+	#imgcarronoiva {
+		width: 100%;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+
+	div.gallery {
+		float: none !important;
+	}
+
+	footer .col-endereço,
+	footer .col-links,
+	footer .col-contato {
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	footer .row h4 {
+	font: 'SFPro-Bold';
+	font-size: 14px;
+	color: black;
+	padding-bottom: 6px;
+	border-bottom: #242D37 1px solid;
+	}
+
+	footer .row-cols ul {
+		list-style: none;
+	}
+
+	footer .col-links a {
+		color: black;
+		font-family: 'SFPro';
+		font-size: 14px;
+	}
+
+	footer .col-links i {
+		margin-right: 5px;
+	}
+
+	footer .col-endereço i {
+		display: none;
+	}
+
+	footer .col-endereço address {
+		font-size: 14px;
+	}
+
+	footer .col-endereço address {
+	}
+
+	footer .col-contato div {
+		display: none;
+		font-size: 18px;
+	}
+
+	footer .col-contato {
+		display: block !important;
+	}
+
+	footer .col-contato .numero {
+		font-size: 14px;
+	}
+
+	footer .col-contato .numero p {
+		width: 100%;
+		margin-bottom: 6px;
+	}
+
+	#map {
+		margin-top: 20px;
+		height: 200px !important;
+	}
+
+	#faixa4 {
+		margin-bottom: 20px;
+	}
+
+	.row-cinza-escuro {
+		width: 100%;
+		height: 100%;
+		margin: 0 !important;
+	}
+
+	.left {
+		color: black;
+		font-family: 'SFPro';
+		font-size: 14px;
+	}
+
+	.right {
+		float: right;
+		color: black;
+		font-family: 'SFPro-Light';
+		font-size: 14px;
+	}
+
+	#direitos {
+		margin-bottom: 0;
+	}
+
+	#direitos .row {
+		margin: 0 !important;
+	}
+
+	#menu-mobile{
+		z-index: 10;
+		position: fixed;
+		top: 50px;
+		background-color: #fff;
+		width: 80%;
+		height: 100%;
+		left: -80%;
+		transition: 1s;
+	}
+
+	.open-menu #menu-mobile{
+		left: 0;
+	}
+
+	.open-menu #menu-mobile-mask{
+		z-index: 9;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 50px;
+		left: 0;
+		background-color: rgba(0,0,0,.5);
+	}
+
+	 #menu-mobile ul {
+		margin: 20px;
+	}
+
+	 #menu-mobile li{
+		text-align: center;
+		border-top: #CCC 1px solid;
+	}
+
+	 #menu-mobile li a{
+		color: #004c9a;
+		font-family: 'SFPro';
+		font-size: 16px;
+		padding: 18px;
+		display: block;
+	}
+
+	 #menu-mobile li button{
+		color: #fff;
+	    background-color: #004c9a;
+	    border-color: #004c9a;
+	    font-family: 'OpenSans';
+	    font-size: 16px;
+	}
+
+	 .bar-close {
+		position: absolute;
+		bottom: 50px;
+		width: 100%;
+		height: 40px;
+		background-color: #004c9a;
+	}
+
+	 .bar-close .btn {
+		height: 50px;
+		width: 50px;
+		padding: 0;
+		float: right;
+		color: white;
+		background-color: #004c9a;
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+
+	#menu-phone{
+		z-index: 15;
+		position: fixed;
+		top: 50px;
+		background-color: #fff;
+		width: 100%;
+		height: 40%;
+		right: -100%;
+		transition: 1s;
+	}
+
+	.open-phone #menu-phone{
+		right: 0;
+	}
+
+	.open-phone #menu-phone-mask{
+		z-index: 14;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 50px;
+		right: 0;
+		background-color: rgba(0,0,0,.5);
+	}
+
+	 #menu-phone ul {
+		margin: 20px;
+	}
+
+	 #menu-phone li{
+		text-align: center;
+	}
+
+	 #menu-phone li a{
+	 	border-top: #CCC 1px solid;
+		color: #004c9a;
+		font-family: 'SFPro';
+		font-size: 16px;
+		padding: 9px;
+		display: block;
+	}
+
+	#menu-phone li h6{
+		color: #004c9a;
+		font-family: 'SFPro-Bold';
+		font-size: 22px;
+		padding: 9px;
+		display: block;
+	}
+
+	 #menu-phone li button{
+		color: #fff;
+	    background-color: #004c9a;
+	    border-color: #004c9a;
+	    font-family: 'OpenSans';
+	    font-size: 16px;
+	}
+
+	 .bar-close-phone {
+		position: absolute;
+		width: 100%;
+		height: 40px;
+		background-color: #004c9a;
+		bottom: 0px;
+	}
+
+	 .bar-close-phone .btn {
+		height: 40px;
+		width: 50px;
+		padding: 0;
+		float: right;
+		color: white;
+		background-color: #004c9a;
+		font-size: 22px;
+	}
+
+	.container-contact100 {
+		height: 1570px;
+	}
+}
